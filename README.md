@@ -5,7 +5,7 @@
 Clone the repo locally:
 
 ```sh
-git clone https://github.com/michaelnabil230/example-filament.git filament-demo && cd filament-demo
+git clone https://github.com/michaelnabil230/pos-with-filament.git filament-demo && cd filament-demo
 ```
 
 Install PHP dependencies:
