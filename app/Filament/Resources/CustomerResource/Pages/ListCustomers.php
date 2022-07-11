@@ -17,5 +17,3 @@ class ListCustomers extends ListRecords
         ];
     }
 }
-
-
