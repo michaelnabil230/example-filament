@@ -1,4 +1,4 @@
-# Example of Filament App
+# Example of Filament Pos App
 
 ## Installation
 
