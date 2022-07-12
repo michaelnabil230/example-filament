@@ -14,7 +14,6 @@
         "flowframe/laravel-trend": "^0.1.1",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.19",
-        "laravel/pint": "^0.2.3",
         "laravel/telescope": "^4.9",
         "laravel/tinker": "^2.7",
         "shuvroroy/filament-spatie-laravel-backup": "^1.2"

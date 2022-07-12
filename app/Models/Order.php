@@ -5,7 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -31,7 +30,7 @@ class Order extends Model
     /**
      * Get the customer that owns the Order
      *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     * @return BelongsTo
      */
     public function customer(): BelongsTo
     {
@@ -39,17 +38,12 @@ class Order extends Model
     }
 
     /**
-     * The products that belong to the Order
+     * Get all of the products for the Order
      *
-     * @return BelongsToMany
+     * @return HasMany
      */
-    public function products(): BelongsToMany
+    public function products(): HasMany
     {
-        return $this->belongsToMany(Product::class);
-    }
-
-    public function payments(): HasMany
-    {
-        return $this->hasMany(Payment::class);
+        return $this->hasMany(OrderProduct::class);
     }
 }
